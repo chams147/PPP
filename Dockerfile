@@ -6,7 +6,7 @@ ARG JAR_FILE=target/*.jar
 COPY target/calculator-0.0.1-SNAPSHOT.jar app.jar
 
 # Exposer le port que votre application utilise (par défaut, 8080 pour Spring Boot)
-EXPOSE 8080
+EXPOSE 9090
 
 # Commande pour démarrer l'application
 ENTRYPOINT ["java", "-jar", "/app.jar"]
