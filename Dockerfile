@@ -3,7 +3,7 @@ FROM openjdk:17-jdk-slim AS base
 
 # Ajouter l'application Spring Boot au conteneur
 ARG JAR_FILE=target/*.jar
-COPY ${JAR_FILE} app.jar
+COPY target/calculator-0.0.1-SNAPSHOT.jar app.jar
 
 # Exposer le port que votre application utilise (par défaut, 8080 pour Spring Boot)
 EXPOSE 8080
